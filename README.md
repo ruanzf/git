@@ -42,14 +42,12 @@ git doc.
 
 二、远程
 1、git remote add <nickname> <url>
-//添加一个新的取名例如ruanzf的远程仓库
+//添加一个新的取名例如origin的远程仓库
+//git remote add origin https://github.com/ruanzf/git.git
 
-2、git fetch <nickname>
-//添加完远程后，得先和远程同步
-
-3、git push <nickname> <branch-name>
-//git push ruanzf master
-//本地commit后的master 分支推送到ruanzf这个刚添加的远程服务器上
+2、git push <nickname> <branch-name>
+//git push -u origin master
+//本地commit后的master 分支推送到origin这个刚添加的远程服务器上
 
 三、分支
 1、git checkout -b branch_1                        
